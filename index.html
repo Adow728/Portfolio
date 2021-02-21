@@ -4,58 +4,110 @@
         <title>Aiden Dow, Programmer</title>
         <style>
             body {
-                background-color: grey;
+                background-color: lightgreen;
             }
+
+            main {
+                position: relative;
+                top: 45px;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            header {
+                position: fixed;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                height: 35px;
+                background-color: lightblue;
+                padding: 10px;
+                z-index: 5;
+            }
+
             div {
-                margin: 15px;
                 padding: 15px;
+                display: flex;
             }
-            #heading {
-                background-color: red;
+
+            header a{
+                margin: 10px;
             }
+
+            a {
+                color: black;
+                text-decoration: none;
+                font-weight: normal;
+                vertical-align: center;
+                display: inline;
+            }
+
             #intro {
-                background-color: blue;
+                background-color: #7fefff;
+                display: block;
             }
-            #whoami {
-                background-color: green;
-                width:1f
-            }
+
             #picture {
-                background-color: yellow;
-                width: 1f
+                float: right;
+                margin: 10px;
             }
+
             #banner {
                 background-color: purple;
-                width: 100%;
             }
+
             #info {
+                flex-direction: row;
                 background-color: orange;
             }
+
             #skills-and-contacts {
                 background-color: violet;
-                width: 45%;
             }
+
             #contact-form {
                 background-color: indigo;
-                width: 45%;
+            }
+
+            a.rightnav{
+                float: right;
+            }
+
+            a.leftnav{
+                float: left;
+            }
+
+            a:hover {
+                font-weight: bold;
+                text-decoration: underline;
             }
         </style>
     </head>
     <body>
-        <div id="heading"><h1>Heading</h1></div>
+        <header>
+            <a href="#" class="leftnav">My Site</a>
+            <a href="https://github.com/Adow728" class="rightnav">Github</a>
+            <a href="#projects" class="rightnav">See my work</a>
+        </header>
+        <main>
+            <div id="intro">
+                <img id="picture" src="#" alt="my picture">
+                <p>
+                    It's awesome to see you! I'm Aiden Dow, programmer.
+                    <hr>
+                    I first started programming in the winter of 2017. My family was visiting Pittsburg for the winter and stayed in a 3-bedroom apartment in an apartment complex. Without much space to play outside, I decided to learn to code.
 
-        <div id="intro">
-            <div id="whoami">
-                <p>I'm Aiden Dow!</p>
+                    Ever since then, I've been programming and tinkering with every computer I could get my hands on. I studied Python, Java, and C++, experimented with Django, Ruby on Rails, and Javascript, and messed up all my computers by installing Ubuntu, Arch Linux, and Fedora. Now I use the experience I gained to build websites and programs for my customers.
+                </p>
             </div>
-            <div id="picture"><img id="picture" src="#" alt="my picture"></div>
-        </div>
 
-        <div id="banner">Find me on Github</div>
+            <div id="banner">Find me on Github</div>
 
-        <div id="info">
-            <div id="skills-and-contacts"></div>
-            <div id="contact-form"></div>
-        </div>
+            <div id="info">
+                <div id="skills-and-contacts"></div>
+                <div id="contact-form"></div>
+            </div>
+        </main>
     </body>
 </html>
